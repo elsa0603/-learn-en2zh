@@ -1,0 +1,29 @@
+name: flutter_english_reader
+description: A simple bilingual (EN/ZH) reading app with English TTS playback.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  #flutter_tts: ^4.0.2
+  http: ^1.1.0
+  audioplayers: ^6.0.0
+  path_provider: ^2.1.3   # 👈 取得本機資料夾路徑（存快取檔）
+  crypto: ^3.0.3          # 👈 做文字的穩定 hash，當作檔名用
+  shared_preferences: ^2.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/articles.json
